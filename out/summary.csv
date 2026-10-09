@@ -1,0 +1,6 @@
+Metric,Our result (small setup),Paper-cited
+"NER micro-F1, RoBERTa-base (DNRTI)",0.6806722689075632,0.842
+"NER micro-F1, SecureBERT (DNRTI)",0.6284602076124568,0.945 (SecureBERT 2.0)
+"TTP macro-F1, TF-IDF + SVM",0.17697228551284458,0.609
+"TTP macro-F1, embedding similarity",0.21154150758753187,no equivalent
+TTP multi-step LLM pipeline,,0.8228 (not implemented here)

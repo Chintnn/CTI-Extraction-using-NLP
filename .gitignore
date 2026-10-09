@@ -1,0 +1,15 @@
+# macOS and temporary files
+.DS_Store
+.Rhistory
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Large trained model weights
+out/RoBERTa-base_model/model.safetensors
+out/SecureBERT_model/model.safetensors

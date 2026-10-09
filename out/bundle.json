@@ -1,0 +1,142 @@
+{
+    "type": "bundle",
+    "id": "bundle--eeb6eff4-e8da-4099-9a2e-14bb14ed9675",
+    "objects": [
+        {
+            "type": "threat-actor",
+            "spec_version": "2.1",
+            "id": "threat-actor--ea308973-6223-4e3d-aa5a-36c06d559eea",
+            "created": "2026-10-09T14:43:46.236278Z",
+            "modified": "2026-10-09T14:43:46.236278Z",
+            "name": "APT28"
+        },
+        {
+            "type": "malware",
+            "spec_version": "2.1",
+            "id": "malware--798963bb-66a0-40ef-a508-90ccebb31181",
+            "created": "2026-10-09T14:43:46.236611Z",
+            "modified": "2026-10-09T14:43:46.236611Z",
+            "name": "Mimikatz",
+            "is_family": false
+        },
+        {
+            "type": "malware",
+            "spec_version": "2.1",
+            "id": "malware--afbf4ec4-ea11-4faa-9f8e-3a47b4b4cd48",
+            "created": "2026-10-09T14:43:46.236741Z",
+            "modified": "2026-10-09T14:43:46.236741Z",
+            "name": "X-Agent",
+            "is_family": false
+        },
+        {
+            "type": "vulnerability",
+            "spec_version": "2.1",
+            "id": "vulnerability--d5f88686-d08f-4e48-8b9c-035d9c026c91",
+            "created": "2026-10-09T14:43:46.2369Z",
+            "modified": "2026-10-09T14:43:46.2369Z",
+            "name": "CVE-2017-0144"
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--eb464b5b-dba3-40d6-b8ac-13125e4b57e1",
+            "created": "2026-10-09T14:43:46.237112Z",
+            "modified": "2026-10-09T14:43:46.237112Z",
+            "name": "Spearphishing Link",
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "external_id": "T1598.003"
+                }
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--095ecfea-6546-4e9e-8d1f-d149e05954b4",
+            "created": "2026-10-09T14:43:46.237349Z",
+            "modified": "2026-10-09T14:43:46.237349Z",
+            "name": "Clear Persistence",
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "external_id": "T1070.009"
+                }
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--fb06244d-e02b-4ea6-a835-073c885983bb",
+            "created": "2026-10-09T14:43:46.237457Z",
+            "modified": "2026-10-09T14:43:46.237457Z",
+            "name": "LSASS Memory",
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "external_id": "T1003.001"
+                }
+            ]
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--a44691d2-6d12-4f06-8eda-504fc066aac5",
+            "created": "2026-10-09T14:43:46.237626Z",
+            "modified": "2026-10-09T14:43:46.237626Z",
+            "relationship_type": "uses",
+            "source_ref": "threat-actor--ea308973-6223-4e3d-aa5a-36c06d559eea",
+            "target_ref": "malware--798963bb-66a0-40ef-a508-90ccebb31181"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--ecb2225e-6a94-4f64-ab67-6f38a3abce84",
+            "created": "2026-10-09T14:43:46.237836Z",
+            "modified": "2026-10-09T14:43:46.237836Z",
+            "relationship_type": "uses",
+            "source_ref": "threat-actor--ea308973-6223-4e3d-aa5a-36c06d559eea",
+            "target_ref": "malware--afbf4ec4-ea11-4faa-9f8e-3a47b4b4cd48"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--b6054d4e-7edb-4a14-aa3c-20d9886128e4",
+            "created": "2026-10-09T14:43:46.237933Z",
+            "modified": "2026-10-09T14:43:46.237933Z",
+            "relationship_type": "uses",
+            "source_ref": "threat-actor--ea308973-6223-4e3d-aa5a-36c06d559eea",
+            "target_ref": "attack-pattern--eb464b5b-dba3-40d6-b8ac-13125e4b57e1"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--9e68b9e8-0f4a-47c8-9764-4c3e10d8c355",
+            "created": "2026-10-09T14:43:46.238026Z",
+            "modified": "2026-10-09T14:43:46.238026Z",
+            "relationship_type": "uses",
+            "source_ref": "threat-actor--ea308973-6223-4e3d-aa5a-36c06d559eea",
+            "target_ref": "attack-pattern--095ecfea-6546-4e9e-8d1f-d149e05954b4"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--d3feb0fd-2aeb-410e-8907-718998fa0a00",
+            "created": "2026-10-09T14:43:46.238117Z",
+            "modified": "2026-10-09T14:43:46.238117Z",
+            "relationship_type": "uses",
+            "source_ref": "threat-actor--ea308973-6223-4e3d-aa5a-36c06d559eea",
+            "target_ref": "attack-pattern--fb06244d-e02b-4ea6-a835-073c885983bb"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--1738dd80-1567-4ccb-9e1b-dac9fd600cb5",
+            "created": "2026-10-09T14:43:46.2382Z",
+            "modified": "2026-10-09T14:43:46.2382Z",
+            "relationship_type": "targets",
+            "source_ref": "threat-actor--ea308973-6223-4e3d-aa5a-36c06d559eea",
+            "target_ref": "vulnerability--d5f88686-d08f-4e48-8b9c-035d9c026c91"
+        }
+    ]
+}
