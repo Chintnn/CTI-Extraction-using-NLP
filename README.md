@@ -1,8 +1,5 @@
 # Cyber Threat Intelligence Extraction using NLP: Implementation Notebook
 
-**B.Tech Project Group 51, Cyber Security Case Study**
-Ayaan Rukadikar, Viraj Sheoran, Chintan Pradhan, Deep Shah
-
 A single Jupyter notebook that implements a **scaled-down demonstration** of the pipeline in our case study report, *"Cyber Threat Intelligence Extraction using Natural Language Processing: A Systematic Architecture, Literature Review, and Empirical Benchmark Study"*. It shows one working, measurable example of each major stage of the report's architecture. It does not reproduce every number in the report.
 
 ```
